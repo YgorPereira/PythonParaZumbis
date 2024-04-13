@@ -1,0 +1,107 @@
+#LISTA 2 PYTHON YGOR RUAN PEREIRA ADS 2024.1
+
+#EX1
+ladoA = int(input('Qual o tamanho do primeiro lado?'))
+ladoB = int(input('Qual o tamanho do segundo lado?'))
+ladoC = int(input('Qual o tamanho do terceiro lado?'))
+
+if ladoA == ladoB == ladoC:
+    print('Seu triângulo é equilatero.')
+elif ladoA == ladoB or ladoA == ladoC or ladoB == ladoC:
+    print('Seu triângulo é isósceles.')
+else:
+    print('Seu triângulo é escaleno.')
+
+#EX2
+ano = int(input('Digite o ano:'))
+
+if ano % 4 == 0 and (ano % 100 != 0 or ano % 400 == 0):
+    print('É Bissexto')
+else:
+    print('Não é Bisexto')
+
+#3
+peso = float(input('Qual a pesagem de peixes de hoje?'))
+if peso > 50:
+    excesso = peso - 50
+    multa = excesso * 4
+    print(f"Você excedeu kg {excesso:.2f}.")
+    print (f'Sua multa é de {multa:.2f}')
+elif peso <= 50:
+    excesso = 0
+    multa = 0
+    print('Sua pesagem está dentro do permitido.')
+
+#4
+
+num1 = float(input('Digite o primeiro valor:'))
+num2 = float(input('Digite o segundo valor:'))
+num3 = float(input('Digite o terceiro valor:'))
+
+if num1 >= num2 and num1 >= num3:
+    maior = num1
+    print(f'Esse é o maior número:{maior:.2f}')
+
+if num2 >= num1 and num2 >= num3:
+    maior = num2
+    print(f'Esse é o maior número:{maior:.2f}')
+
+if num3 >= num1 and num3 >= num2:
+    maior - num3
+    print(f'Esse é o maior número:{maior:.2f}')
+
+#5
+num1 = float(input('Digite o primeiro valor:'))
+num2 = float(input('Digite o segundo valor:'))
+num3 = float(input('Digite o terceiro valor:'))
+
+if num1 >= num2 >= num3:
+    maior = num1
+    menor = num3
+    print(f'Esse é o maior número:{maior:.2f}')
+    print(f'Esse é o menor número:{menor:.2f}')
+
+if num1 >= num3 >= num2:
+    maior = num1
+    menor = num2
+    print(f'Esse é o maior número:{maior:.2f}')
+    print(f'Esse é o menor número:{menor:.2f}')
+
+if num2 >= num1 >= num3:
+    maior = num2
+    menor = num3
+    print(f'Esse é o maior número:{maior:.2f}')
+    print(f'Esse é o menor número:{menor:.2f}')
+
+if num2 >= num3 >= num1:
+    maior = num2
+    menor = num1
+    print(f'Esse é o maior número:{maior:.2f}')
+    print(f'Esse é o menor número:{menor:.2f}')
+
+if num3 >= num1>= num2:
+    maior = num1
+    menor = num2
+    print(f'Esse é o maior número:{maior:.2f}')
+    print(f'Esse é o menor número:{menor:.2f}')
+
+if num3 >= num2 >= num1:
+    maior = num3
+    menor = num1
+    print(f'Esse é o maior número:{maior:.2f}')
+    print(f'Esse é o menor número:{menor:.2f}')
+
+#6
+sal_hr = float(input('Quanto você ganha por hora?'))
+hr_trab = float(input('Quantas horas você trabalha no mês?'))
+
+sal_bruto = sal_hr * hr_trab
+
+ir = sal_bruto * 0.11
+inss = sal_bruto * 0.08
+sindc = sal_bruto * 0.05
+descont = ir + inss + sindc
+
+sal_liquid = sal_bruto - descont
+
+print (f'Foram descontados R$ {descont:.2f}. Seu salário líquido é de R$ {sal_liquid:.2f}')

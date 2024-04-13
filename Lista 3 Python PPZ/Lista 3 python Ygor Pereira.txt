@@ -1,0 +1,57 @@
+#1
+nota = float(input('digite a sua nota de 0 a 10: '))
+
+while nota > 10 or nota < 0:
+    print ('Essa não é uma nota valida.')
+    nota = float(input('digite a sua nota de 0 a 10: '))
+    
+print (f'sua nota é {nota}')
+
+
+#2
+user = str(input('Digite o usuário: '))
+password = str(input('Digite a senha: '))
+
+while user == password:
+    print ('ATENÇÃO! O usuário e a senha estão iguais.')
+    user = str(input('Digite o usuário: '))
+    password = str(input('Digite a senha: '))
+
+print ('Cadastro feito com sucesso!')
+
+#3
+popA = 80000
+popB = 200000
+
+ano = 0
+
+while popA < popB:
+    crescA = popA * 0.03
+    crescB = popB * 0.015
+
+    popA = popA + crescA
+    popB = popB + crescB
+    
+    ano = ano + 1
+
+print (f'Será necessário {ano} anos para a população de A ultrapassar a de B.')
+
+#4 
+num = int(input('numero: '))
+a, b = 1, 1
+cont = 1
+
+while cont <= num - 2:
+    a, b = b, a + b
+    cont = cont + 1
+
+print (b)
+
+#5
+num1 = int(input('Digite um número: '))
+num2 = int(input('Digite um número: '))
+
+while num1 % num2 != 0:
+    num1, num2 = num2, num1 % num2
+
+print(f'O mdc é {num2:.2f}.')
